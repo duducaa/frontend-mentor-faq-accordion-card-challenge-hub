@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --titulo: hsl(238, 29%, 16%);
+    --pergunta-hover: hsl(14, 88%, 65%);
+    --back-grad-i: hsl(273, 75%, 66%);
+    --back-grad-f: hsl(240, 73%, 65%);
+    --pergunta: hsl(237, 12%, 33%);
+    --resposta: hsl(240, 6%, 50%);
+    --divisor: hsl(240, 5%, 91%);
+}
+
+body {
+    background-image: linear-gradient(var(--back-grad-i), var(--back-grad-f));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans';
+    font-size: 12px;
+    /* padding: 100% 0%; */
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.desktop {
+    display: none;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.cartao {
+    background-color: white;
+    border-radius: 20px;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 6% 13%;
+}
+
+.imagem {
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.imagem * {
+    width: 86%;
+    top: 0%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.imagem .imagem-principal {
+    top: -75%;
+}
+
+.cartao .titulo {
+    color: var(--titulo);
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 12%;
+}
+
+.cartao .topicos .item {
+    border-bottom: 1px solid var(--divisor);
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.cartao .topicos .item:last-child {
+    margin-bottom: 0;
+}
+
+.cartao .topicos .item-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em;
+}
+
+.cartao .topicos .pergunta:hover {
+    color: var(--pergunta-hover);
+}
+
+.cartao .topicos .pergunta-active {
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+.cartao .topicos .seta {
+    cursor: pointer;
+}
+
+.cartao .topicos .resposta {
+    color: var(--resposta);
+    width: 90%;
+    margin-top: 5%;
+    display: none;
+}
+
+.cartao .topicos .resposta-active {
+    display: block;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao {
+        width: 60%;
+        align-items: center;
+        flex-direction: row;
+        padding: 2% 0;
+    }
+
+    .imagem {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .imagem * {
+        top: 40%;
+        left: -130%;
+        transform: translate(0%, -50%);
+    }
+
+    .imagem .imagem-principal {
+        top: 50%;
+        left: -16%;
+    }
+
+    .imagem-sombra {
+        width: 200%;
+    }
+
+    .box {
+        width: 11%;
+        top: 44%;
+        left: 14.4%;
+        position: absolute;
+    }
+
+    .texto {
+        width: 50%;
+        padding-right: 10%;
+    }
+
+    .cartao .titulo {
+        text-align: left;
+
+    }
+}
